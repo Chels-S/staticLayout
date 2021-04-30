@@ -1,9 +1,19 @@
+/* MAIN STYLES */
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+/* HEADER AND NAVIGTION */
 header {
-    background-color: #676767;
+    background-color: #2D2D2D;
     display: flex;
     color: white;
     width: 100%;
     height: 80px;
+    
 }
 
 header img {
@@ -12,54 +22,237 @@ header img {
 }
 
 header h1 {
-    display: flex;
-    justify-content: flex-start;
+    color:white;
+    font-family: 'Crimson Text', serif;
+    font-size: 21px;
+    margin-right: 25%;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 100; 
 }
 
-nav ul {
+
+
+nav {
     display: flex;
-    justify-content: flex-end;
+    
 }
 
 nav a {
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 20px;
+    color: white;
 }
 
 nav li {
     list-style-type: none;
     display: inline;
-    flex: 1;
+}
+
+
+
+
+
+/* TAGLINE SECTION */
+.tagline {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.tagline video {
+    width: 100%;
+    position: relative;
+    z-index: 0;
     
 }
 
-.tagline {
-    width: 100%;
-    height: 40%;
+.taglineInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    flex-direction: column;
+    margin-bottom: -10px;
 }
+
+.tagline h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:#3B3C3E 3px solid;
+    background: #3B3C3E;
+}
+
+.tagline h2 {
+    position: absolute;
+    top: 60%;
+    border:#E33E42 3px solid;
+    background: #E33E42;
+}
+
+
+/* COURSE INFO SECTION */
 
 .courseInfo {
     background-color: #efefef;
     display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
     width: 100%;
-    height: 35%;
 }
 
 .courseInfo h1 {
-    color: orange;
+    color: #348DB9;
     text-transform: uppercase;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 50px;
+    font-weight: 900
     
 }
 
 .courseDescriptions {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 150px;
+    
 }
 
-.introCourse, .fullTimeCourse, .partTimeCourse {
-    border: solid 3px black;
-    margin: 20px;
+.courseDescriptions h3 {
+    font-size: 32px;
+    margin-top: -10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.courseDescriptions p {
+    color: #757575;
+    font-size: 19px;
+    line-height: 1.5em;
+    margin-top: -10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.courseDescriptions a {
+    text-decoration: none;
+}
+.courseDescriptions a:hover {
+    background-color: #DDDDDD;
+}
+
+.introCourseBox, .fullTimeCourseBox, .partTimeCourseBox {
+    background-color: white;
+    margin-left: 20px;
     
+}
+
+.introCourse h3, .fullTimeCourse h3, .partTimeCourse h3 {
+    color: black;
+}
+
+.introCourseButton, .fullTimeCourseButton {
+    /* border: solid 5px #E33E42; */
+    background-color: #E33E42;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.introCourseButton p, .fullTimeCourseButton p {
+    color: white;
+    font-size: 19px;
+    padding: 5px 0 5px 0;
+    margin-bottom: -30px;
+}
+
+.partTimeCourseButton p {
+    color: white;
+    font-size: 19px;
+    padding: 5px 0 5px 0;
+    margin-bottom: -100px;
+}
+
+
+.partTimeCourseButton {
+    background-color: #E33E42;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+
+.introCourse, .fullTimeCourse, .partTimeCourse {
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.introCourse p, .fullTimeCourse p {
+    margin-bottom: 35px;
+}
+
+
+/* SNIPPET SECTION */
+
+.snippet {
+    display: grid;
+    grid-template-columns: 37% 63%;
+    grid-template-rows: 100%;
+    margin-top: 10px;
+    
+}
+
+
+.snippet img {
+    justify-self:flex-end;
+    margin-top: 60px;
+}
+
+.snippetInfo {
+    justify-self: flex-start;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.snippetInfo h3 {
+    color: #348DB9;
+    font-size: 32px;
+}
+
+.snippetInfo p {
+    font-size: 19px;
+    color: #676767;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+/* AFFILIATES SECTION */
+.partnersAffiliates {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #348DB9;
+    font-size: 32px;
 }
 /* 
 .fullTimeCourse {

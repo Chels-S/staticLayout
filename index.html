@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indy Nonprofit Coding Bootcamp & Coding Academy | Eleven Fifty Academy</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Overpass:wght@600;700;800;900&display=swap" rel="stylesheet"> 
+
+
 </head>
 <body>
     <header> 
@@ -22,18 +26,32 @@
                 <li><a href="">Campus</a></li>
                 <li><a href="">Employers</a></li>
                 <li><a href="">(The search bar)</a></li>
-                <li><a href="">Schedule A Meeting</a></li>
-                <li><a href="">Apply Now</a></li>
+                <span>
+                    <li><a href="">Schedule A Meeting</a></li>
+                    <li><a href="">Apply Now</a></li>
+                </span>
             </ul>
+            <!-- 
+                <div class=search>
+                    <a href="">(the search bar)</a>
+                </div>
+                <div class=schedule>
+                    <a href="">Schedule A Meeting</a>
+                </div>
+                <div class=apply>
+                    <a href="">Apply Now</a>
+                </div> -->
         </nav>
     </header>
 
 
     <div class=tagline>
         <video autoplay muted loop id="elevenFiftyVideo"><source src="https://elevenfifty.org/wp-content/themes/elevenfiftyacademy/assets/video/EFA-home.webm"></video>
-        <!--Video as background for this section. Need to embed -->
-        <h1>Attend a free intro course!</h1>
-        <h2>Learn more ></h2> <!--Button-->
+        <div class=taglineInfo>
+        <!--Video as background for this section. Need to embed? -->
+            <h1>Attend a free intro course!</h1>
+            <h2>Learn more ></h2> <!--Button-->
+        </div>
 
         <!-- There's a circle with an arrow under this that takes you to the Course information section -->
     </div>
@@ -42,40 +60,65 @@
         <h1>Course Information</h1>
 
         <div class=courseDescriptions>
-            <div class=introCourse>
-                <h3>Free Intro Courses - Online</h3>
-                <p>Want to discover if you'd enjoy a career in coding or cybersecruity? 
-                   Try one of our FREE intro courses from home.</p>
-                <p>Sign up now ></p> <!--Button, highlights the whole box-->
-            </div>
+
+            <a class="introCourseBox" href="https://elevenfifty.org/courses/free-intro-to-coding/">
+    
+                <div class=introCourse>
+                    <h3>Free Intro Courses - Online</h3>
+                    <p>Want to discover if you'd enjoy a career in coding or cybersecruity? 
+                        Try one of our FREE intro courses from home.</p>
+
+                </div>
+                    
+                <div class="introCourseButton">
+                        <p>Sign up now > </p> <!--Button, highlights the whole box-->
+                </div>
+                
+            </a>
 
 
-            <div class=fullTimeCourse>
-                <h3>Full-Time 12/14-Week Courses</h3>
-                <p>Learn today's most relevant software development or cybersecurity 
-                   skills to kick off a new career in the tech industry.</p>
-                <p>Full-Time Courses ></p><!--Button, highlights the whole box-->
-            </div>
+            <a class="fullTimeCourseBox" href="https://elevenfifty.org/courses/full-time-immersive/">
+                <div class=fullTimeCourse>
+                    <h3>Full-Time 12/14-Week Courses</h3>
+                    <p>Learn today's most relevant software development or cybersecurity 
+                    skills to kick off a new career in the tech industry.</p>
+                </div>
+
+                <div class="fullTimeCourseButton">
+                    <p>Full-Time Courses > </p> <!--Button, highlights the whole box-->
+                </div>
+            </a>
 
 
-            <div class=partTimeCourse>
-                <h3>Part-Time 24-Week Courses</h3>
-                <p>Our part-time coding bootcamps allow students the flexibility to work while 
-                   attending class virtually and on-site. Make money and change careers at 
-                   the same time.</p>
-                <p>Part-Time Courses ></p><!--Button, highlights the whole box-->
-            </div>
+
+            <a class="partTimeCourseBox" href="https://elevenfifty.org/courses/part-time/">
+                <div class=partTimeCourse>
+                    <h3>Part-Time 24-Week Courses</h3>
+                    <p>Our part-time coding bootcamps allow students the flexibility to work while 
+                        attending class virtually and on-site. Make money and change careers at 
+                        the same time.</p>
+                        
+                </div>
+
+                <div class="partTimeCourseButton">
+                    <p>Part-Time Courses > </p> <!--Button, highlights the whole box-->
+                </div>
+            </a>
+
         </div>
+
     </div>
     
 
     <div class=snippet>
         <img src="assets/greyElevenFiftyLogo.png" alt="Alt Eleven Fifty Logo">
-        <h3>The tech world is rapidly evovling. Our curriculum keeps pace.</h3>
-        <p>Eleven Fifty Academy is a 501(c)(3) nonprofit code and cybersecurity academy and
-            was the first coding bootcamp in Indiana. We believe in impacting the lives of
-            students by providing relevant coding skills for the most in-demand jobs in 
-            today's tech ecosystem.</p>
+            <div class=snippetInfo>
+                <h3>The tech world is rapidly evovling. Our curriculum keeps pace.</h3>
+                 <p>Eleven Fifty Academy is a 501(c)(3) nonprofit code and cybersecurity academy and
+                    was the first coding bootcamp in Indiana. We believe in impacting the lives of
+                    students by providing relevant coding skills for the most in-demand jobs in 
+                    today's tech ecosystem.</p>
+            </div>
     </div>
 
     </div>

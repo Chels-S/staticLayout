@@ -1,0 +1,86 @@
+header {
+    background-color: #676767;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 80px;
+}
+
+header img {
+    width:80px;
+    height: 80px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    flex: 1;
+    
+}
+
+.tagline {
+    width: 100%;
+    height: 40%;
+}
+
+.courseInfo {
+    background-color: #efefef;
+    display: grid;
+    width: 100%;
+    height: 35%;
+}
+
+.courseInfo h1 {
+    color: orange;
+    text-transform: uppercase;
+    
+}
+
+.courseDescriptions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introCourse, .fullTimeCourse, .partTimeCourse {
+    border: solid 3px black;
+    margin: 20px;
+    
+}
+/* 
+.fullTimeCourse {
+    border: solid 3px black;
+    margin: 20px;
+}
+
+.partTimeCourse {
+    border: solid 3px black;
+    margin: 20px;
+} */
+/* .snippet {
+    width: 100%;
+    height: 35%;
+}
+
+.partnersAffiliates {
+    width: 100%;
+    height: 35%;
+}
+
+.partnersAffiliates h3 
+    color: orange;
+} */

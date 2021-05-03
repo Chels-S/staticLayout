@@ -12,22 +12,28 @@ header {
     display: flex;
     color: white;
     width: 100%;
-    height: 80px;
-    
+    height: 65px;
+
 }
 
+
 header img {
-    width:80px;
-    height: 80px;
+    width:65px;
+    height: 65px;
+}
+
+header img a:hover {
+    background-color: #DDDDDD;
+    
 }
 
 header h1 {
     color:white;
     font-family: 'Crimson Text', serif;
-    font-size: 21px;
+    font-size: 20px;
     margin-right: 20%;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 100; 
 }
 
@@ -36,8 +42,9 @@ header h1 {
 nav {
     display: flex;
     align-items: center;
- 
+    margin-left: 179px;
 }
+
 
 nav a {
     text-decoration: none;
@@ -52,6 +59,12 @@ nav li {
     display: inline;
     margin-right: 20px;
 
+}
+
+
+.searchIcon img {
+    height: 17px;
+    width: 20px;
 }
 
 #schedule a {
@@ -123,6 +136,13 @@ nav li {
     color: white;
 }
 
+.moreIcon img {
+    position: absolute;
+    top: 90%;
+    display: flex;
+    margin-left: 52em;
+    height: 7vh;
+}
 
 /* COURSE INFO SECTION */
 
@@ -242,6 +262,7 @@ nav li {
     grid-template-columns: 37% 63%;
     grid-template-rows: 100%;
     margin-top: 10px;
+    margin-bottom: 80px;
     
 }
 
@@ -282,6 +303,30 @@ nav li {
     align-items: center;
     color: #348DB9;
     font-size: 32px;
+    margin-bottom: 100px;
+}
+
+
+.affiliateIcons {
+    height: 50vh;
+    width: 50vw;
+    margin-top: 100px;
+
+}
+
+.affiliateIcons ul {
+    display: flex;
+    margin-top: 400px;
+}
+
+.affiliateIcons ul li {
+    text-decoration: none;
+    display: inline;
+}
+
+.heroes {
+    height: 30px;
+    width: 30px;
 }
 /* 
 .fullTimeCourse {
